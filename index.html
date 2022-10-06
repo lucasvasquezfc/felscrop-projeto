@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felscorp</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500;700&family=Sacramento&family=Ubuntu:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-bar">
+      <nav>
+        <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="metalica.html">METÁLICA</a></li>
+            <li><a href="drywall.html">DRYWALL</a></li>
+            <li><a href="acm.html">ACM</a></li>
+            <li><a href="contato.html">ENTRE CONTATO</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>INOVAÇÃO + QUALIDADE = FELSCORP</h1>
+        <p>
+          Uma empresa que visa inovação e qualidade. Quando assunto for
+          construção deixa com a gente.
+        </p>
+        <a href="contato.html" class="hero-btn">Nos Visite Para Saber Mais</a>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="projeto">
+      <!-- containers -->
+      <div class="sobre">
+        <h1>Sobre Nós</h1>
+        <p>
+          Um grupo empresarial voltado para todos os tipos de contruções
+          estruturadas, contando com equipes de profissionais e técnicos<br />
+          específicos com competência para a realização da sua obra independente
+          de qual seja a estrutura a ser construída.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="projeto-col">
+          <img src="images/metalica-crop.jpg" alt="" />
+          <div class="layer">
+            <a href="metalica.html">
+              <h3>METALICA</h3>
+              <p>
+                TECNOAÇO, uma equipe de tecnicos da Felscorp especializados 100%
+                em estruturas em aço e ferro.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="projeto-col">
+          <img src="images/drywall-crop.jpg" alt="" />
+          <div class="layer">
+            <a href="drywall.html">
+              <h3>DRYWALL</h3>
+              <p>
+                TECNODRY, a equipe técnica em Drywall da Felscorp entrega
+                soluções completas que se enquadram dentro do seu estilo.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="projeto-col">
+          <img src="images/acm-crop.jpg" alt="" />
+          <div class="layer">
+            <a href="acm.html">
+              <h3>ACM</h3>
+              <p>
+                TECNOPAINE, vai fazer com que a fachada de sua empresa fique
+                muito mais elegante e sofisticada com um projeto feito para
+                você.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------- texto ----------- -->
+
+    <section class="texto">
+      <h1>Construções Estruturadas</h1>
+      <p>
+        Garantimos totalmente a qualidade dos serviços pois conta com um corpo
+        técnico especializados em cada área estrutural totalmente
+        independente.<br />
+        Trabalhamos confiantes com nossos clientes, não recebendo sinal de
+        entrada.
+      </p>
+    </section>
+
+    <!------- Call To Action ------->
+
+    <section class="cta">
+      <h1>Garantimos seu trabalho sem pedir dinheiro de entrada</h1>
+      <a href="contato.html" class="hero-btn">ENTRE EM CONTATO</a>
+    </section>
+    <!-- footer -->
+
+    <section class="footer">
+      <h1>Contato</h1>
+      <p>(21) 97574-9976 / 99152-8783</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>...</p>
+    </section>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b8e5937c9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT for toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

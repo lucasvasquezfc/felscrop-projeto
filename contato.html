@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felscorp</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500;700&family=Sacramento&family=Ubuntu:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="metalica.html">METÁLICA</a></li>
+            <li><a href="drywall.html">DRYWALL</a></li>
+            <li><a href="acm.html">ACM</a></li>
+            <li><a href="contato.html">ENTRE CONTATO</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Entre em Contato</h1>
+    </header>
+    <!-- main -->
+    <section class="metalica">
+      <!-- ------------------Contact us ---------------- -->
+
+      <section class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14719.52932675963!2d-43.551080649999996!3d-22.732614549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995c0b0a64cd23%3A0x4ffa3f7af5fdfdbc!2sVila%20Sao%20Joao%2C%20Queimados%20-%20State%20of%20Rio%20de%20Janeiro%2C%2026379-020!5e0!3m2!1sen!2sbr!4v1664895665139!5m2!1sen!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="contato">
+        <div class="row">
+          <section>
+            <div class="contact-col">
+              <div>
+                <i class="fa-solid fa-home"></i>
+                <span>
+                  <h5>Rua Almezina Leal De Souza, Lt 42 Qd 02</h5>
+                  <p>Queimados, Rio de Janeiro, BR</p>
+                </span>
+              </div>
+            </div>
+            <div class="contact-col">
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                  <h5>+55 (21) 9 9651-5365</h5>
+                  <p>Disponibilidade de Horário</p>
+                </span>
+              </div>
+            </div>
+            <div class="contact-col">
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <h5>lucas.vasquez@live.com</h5>
+                  <p>Envie um Email</p>
+                </span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="contact-col">
+              <form
+                action="https://formsubmit.co/lucasvasquezdev@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email Address"
+                  required
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Email Recebido através do site ;D"
+                />
+                <textarea
+                  rows="8"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <!-- <input type="hidden" name="_next" value="index.html" /> -->
+                <button type="submit" class="hero-btn red-btn">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+    <!-- footer -->
+
+    <section class="footer">
+      <h1>Contato</h1>
+      <p>(21) 97574-9976 / 99152-8783</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>...</p>
+    </section>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b8e5937c9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT for toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

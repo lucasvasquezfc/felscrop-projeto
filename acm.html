@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felscorp</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500;700&family=Sacramento&family=Ubuntu:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="metalica.html">METÁLICA</a></li>
+            <li><a href="drywall.html">DRYWALL</a></li>
+            <li><a href="acm.html">ACM</a></li>
+            <li><a href="contato.html">ENTRE CONTATO</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>ACM</h1>
+    </header>
+    <!-- main -->
+    <section class="metalica-us">
+      <div class="row">
+        <div class="metalica-col">
+          <h1>TECNOPAINE</h1>
+          <p>
+            Faremos com que a fachada de sua epmresa fique muito mais elegante e
+            sofisticada com um projeto feito para você
+          </p>
+          <img src="" alt="" />
+          <p>
+            Um material inovador, podemos dizer que é o revestimento do futuro
+            devido ao seu alto padrão de qualidade, vesatilidade e beleza, o que
+            o torna o ACM um mateiral atrativo e utilizado em diversos tipos de
+            projetos e obras.
+          </p>
+          <div class="list">
+            <h2>Vantagens:</h2>
+            <ul>
+              <li>Alta durabilidade</li>
+              <li>Facilidade de limpeza e manutenção</li>
+              <li>Flexibilidade, podendo ser dobrado e curvado</li>
+              <li>Pintura resistente e durável</li>
+              <li>Protege a parede externa da poluição</li>
+              <li>Boa relação térmica, economia com ar-condicionados</li>
+            </ul>
+          </div>
+
+          <a href="contato.html" class="hero-btn red-btn">ENTRE EM CONTATO</a>
+        </div>
+        <div class="metalica-col">
+          <img src="images/acm.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <section class="footer">
+      <h1>Contato</h1>
+      <p>(21) 97574-9976 / 99152-8783</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>...</p>
+    </section>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b8e5937c9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT for toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
